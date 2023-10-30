@@ -91,5 +91,3 @@ To set up and run this application locally, follow these steps:
 - The application doesn't include user authentication. In a real-world scenario, you'd likely add user management features.
 
 - We assume that you have a working MongoDB instance set up and properly configured.
-
-Feel free to customize this README to fit your specific application and project requirements. If you face any issues or have questions, please refer to the documentation for the technologies used or reach out for support.
