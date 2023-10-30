@@ -6,7 +6,7 @@ This is a simple Node.js application that provides CRUD (Create, Read, Update, D
 
 ### 1. Add a New Book
 
-- **Endpoint:** `/api/books`
+- **Endpoint:** `http://localhost:3000/api/addBook`
 - **HTTP Method:** POST
 - **Request Body:** JSON
   ```json
@@ -20,33 +20,35 @@ This is a simple Node.js application that provides CRUD (Create, Read, Update, D
 
 ### 2. View a List of All Books
 
-- **Endpoint:** `/api/books`
+- **Endpoint:** `http://localhost:3000/api/readAllBooks`
 - **HTTP Method:** GET
 - **Response:** JSON array of all books in the database.
 
 ### 3. View Details of a Specific Book by ID
 
-- **Endpoint:** `/api/books/:id`
+- **Endpoint:** `http://localhost:3000/api/getBookById?id`
 - **HTTP Method:** GET
 - **Response:** JSON with the book's details for the specified ID.
 
 ### 4. Update a Book's Details
 
-- **Endpoint:** `/api/books/:id`
+- **Endpoint:** `http://localhost:3000/api/updateBookById`
 - **HTTP Method:** PUT
 - **Request Body:** JSON with the fields to update.
   ```json
   {
-    "title": "New Title"
+    "title": "New Title",
+    "author": "F. Scott Fitzgerald",
+    "summary": "A classic novel about the American Dream."
   }
   ```
-- **Response:** JSON with the updated book's details.
+- **Response:** Operation Successfully Message.
 
 ### 5. Delete a Book
 
-- **Endpoint:** `/api/books/:id`
+- **Endpoint:** `http://localhost:3000/api/deleteBookById?id`
 - **HTTP Method:** DELETE
-- **Response:** JSON confirmation message for successful deletion.
+- **Response:** Operation Successfully Message.
 
 ## Setup and Local Deployment
 
@@ -68,7 +70,7 @@ To set up and run this application locally, follow these steps:
 
 3. **Set Up MongoDB:**
 
-   You can use a local MongoDB instance or a cloud solution like MongoDB Atlas. Make sure to configure your MongoDB connection in the `config.js` or `.env` file.
+   You can use a local MongoDB instance or a cloud solution like MongoDB Atlas. Make sure to configure your MongoDB connection in the `db.js` and `.env` file.
 
 4. **Run the Application:**
 
