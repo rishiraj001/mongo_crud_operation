@@ -80,7 +80,7 @@ To set up and run this application locally, follow these steps:
    npm start
    ```
 
-   The application will be available at `http://localhost:3000`.
+   The application will be available at `http://localhost:3000/api/`.
 
 ## Assumptions and Decisions
 
