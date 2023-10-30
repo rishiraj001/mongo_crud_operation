@@ -57,7 +57,7 @@ To set up and run this application locally, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:rishiraj001/mongo_crud_operation.git
    ```
 
 2. **Install Dependencies:**
